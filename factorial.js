@@ -19,3 +19,21 @@ console.log(factorialRecursive(5));
 
 // output 
 // 120
+
+// ******************************************* //
+
+function factorial(n) {
+    if (n < 0) {
+        return "Factorial is not defined for negative numbers.";
+    }
+    var result = 1;
+    for (var i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+console.log(factorial(5));
+
+// output 
+// 120
